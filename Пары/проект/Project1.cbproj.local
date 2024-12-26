@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2024.09.03 17:26:25.418,=C:\Users\student\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024.09.03 17:26:25.480,=C:\Users\student\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024.09.03 17:30:32.433,D:\Public\А-13-22\Сафонова\Практика 1\Unit1.h=C:\Users\student\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2024.09.03 17:30:32.433,D:\Public\А-13-22\Сафонова\Практика 1\Project1PCH1.h=C:\Users\student\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2024.09.03 17:30:32.433,D:\Public\А-13-22\Сафонова\Практика 1\Unit1.dfm=C:\Users\student\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024.09.03 17:30:32.433,D:\Public\А-13-22\Сафонова\Практика 1\Unit1.cpp=C:\Users\student\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2024.09.03 17:30:32.449,D:\Public\А-13-22\Сафонова\Практика 1\Project1.cbproj=C:\Users\student\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2024.09.03 17:30:39.535,D:\Public\А-13-22\Сафонова\Практика 1\Project1.cbproj=D:\Public\А-13-22\Сафонова\Практика 1\Project1.cbproj</Transaction>
+    <Transaction>2024.09.03 18:43:24.518,G:\проект\Project1PCH2.h=D:\Public\А-13-22\Сафонова\Практика 1\Project1PCH1.h</Transaction>
+    <Transaction>2024.09.03 18:43:24.569,G:\проект\Project1.cbproj=D:\Public\А-13-22\Сафонова\Практика 1\Project1.cbproj</Transaction>
+    <Transaction>2024.09.03 18:43:26.228,G:\проект\Project1.cbproj=G:\проект\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

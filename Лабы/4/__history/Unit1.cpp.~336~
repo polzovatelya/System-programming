@@ -1,0 +1,315 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+bool graf = false,pic = false,fig = false,background=false,krug_bool = false;
+bool mousemove = false;
+int x;
+int y;
+bool IsMouseDown=false;
+TRect btn2 = Rect(300,10,500,80);
+TRect krug1 = Rect(600,600,700,700);
+TRect figure = Rect(300,700,400,800);
+
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+void Sun(){
+//  Небо
+	Form1->Canvas->Brush->Color = clSkyBlue;
+	Form1->Canvas->FillRect(TRect(85,85,700,700));
+
+//  Трава
+	Form1->Canvas->Brush->Color = clGreen;
+	Form1->Canvas->FillRect(TRect(85,500,700,700));
+
+//  Солнце
+	Form1->Canvas->Brush->Color = clYellow;
+	Form1->Canvas->Ellipse(150,150, 350,350);
+	Form1->Canvas->Pen->Width = 30;
+	Form1->Canvas->Pen->Color = clYellow;
+	Form1->Canvas->MoveTo(100,400);
+	Form1->Canvas->LineTo(400,100);
+	Form1->Canvas->MoveTo(100,100);
+	Form1->Canvas->LineTo(400,400);
+	Form1->Canvas->MoveTo(250,100);
+	Form1->Canvas->LineTo(250,400);
+	Form1->Canvas->MoveTo(100,250);
+	Form1->Canvas->LineTo(400,250);
+
+//  Цветок
+	Form1->Canvas->Pen->Width = 15;
+	Form1->Canvas->Pen->Color = clLime;
+	Form1->Canvas->MoveTo(600,550);
+	Form1->Canvas->LineTo(600,350);
+	Form1->Canvas->Pen->Width = 0;
+	Form1->Canvas->Pen->Color = clFuchsia;
+	Form1->Canvas->Brush->Color = clFuchsia;
+	Form1->Canvas->Ellipse(600,350, 670,420);
+	Form1->Canvas->Ellipse(540,350, 610,420);
+	Form1->Canvas->Ellipse(540,300, 620,370);
+	Form1->Canvas->Ellipse(610,300, 680,370);
+
+    Form1->Canvas->Pen->Width = 0;
+	Form1->Canvas->Pen->Color = clYellow;
+	Form1->Canvas->Brush->Color = clYellow;
+	Form1->Canvas->Ellipse(580,330, 630,380);
+
+
+
+
+
+	Form1->Canvas->Brush->Color = clBlack;
+	Form1->Canvas->Pen->Width = 4;
+	Form1->Canvas->Pen->Color = clBlack;
+
+}
+void Draw_But(){
+	Form1->Canvas->Brush->Color = clBtnFace;
+	Form1->Canvas->FillRect(btn2);
+	Form1->Canvas->Pen->Width = 1;
+	Form1->Canvas->Pen->Color = clBlue;
+	Form1->Canvas->MoveTo(300,10);
+	Form1->Canvas->LineTo(500,10);
+	Form1->Canvas->MoveTo(500,10);
+	Form1->Canvas->LineTo(500,80);
+	Form1->Canvas->MoveTo(500,80);
+	Form1->Canvas->LineTo(300,80);
+	Form1->Canvas->MoveTo(300,80);
+	Form1->Canvas->LineTo(300,10);
+	Form1->Canvas->Font->Size = 10;
+	Form1->Canvas->TextOut(360,35, "Я кнопка");
+}
+void Draw_Graf(){
+		Form1-> Canvas -> Brush -> Color = TColor(RGB(0,0,0));
+	Form1->Canvas -> Pen ->Color = TColor(RGB(0,0,0));
+	Form1->Canvas -> Pen ->Width = 3;
+
+
+ int xc = Form1-> Width/ 2;
+ int yc =  Form1 -> Height/2 ;
+
+  double m=1.0;  //масштаб рисунка, для начала = 1
+
+ 	if  (Form1-> Edit1->Text != "" ){
+	m = m* StrToFloat(Form1-> Edit1->Text); }
+	else
+	m = m;
+
+ int lx =Form1-> Width/ 2/m; //половина длины оси Х
+ int ly =Form1 -> Height/2/m ;  //половина длины оси Y
+
+ double mx =lx/3.14/2;
+ double my =ly/20;
+ // Оси
+  Form1->Canvas->MoveTo(xc-round(lx*m),yc);
+  Form1->Canvas->LineTo(xc+round(lx*m),yc);
+  Form1->Canvas->MoveTo(xc,yc-round(ly*m));
+  Form1->Canvas->LineTo(xc,yc+round(ly*m));
+  // Чёрточки
+  for (int i =0 ; i<15 ;i++) {
+	Form1->Canvas->MoveTo(xc+round(i*mx),yc+5);
+	Form1->Canvas->LineTo(xc+round(i*mx),yc-5);
+
+	Form1->Canvas->MoveTo(xc-round(i*mx),yc+5);
+	Form1->Canvas->LineTo(xc-round(i*mx),yc-5);
+
+	Form1->Canvas->MoveTo(xc+5,yc+round(i*my));
+	Form1->Canvas->LineTo(xc-5,yc+round(i*my));
+
+	Form1->Canvas->MoveTo(xc+5,yc-round(i*my));
+	Form1->Canvas->LineTo(xc-5,yc-round(i*my));
+	}
+  //
+  double x =-5;
+  Form1->Canvas->MoveTo(xc+round(x*mx),yc-round(  (5*sin(x + 1.2)*my - 7*sin(x*x - 10)*my)   ));
+  while (x<=5) {
+	Form1->Canvas->LineTo(xc+round(x*mx),yc-round((5*sin(x + 1.2)*my - 7*sin(x*x - 10)*my )));
+	x += 0.1;
+	 }
+}
+void Draw_Fig(){
+	Form1->Canvas -> Brush -> Color =TColor(RGB(random(255),random(255),random(255))) ;
+	Form1->Canvas->Rectangle(figure) ;
+
+}
+void Krug(){
+	Form1->Canvas -> Brush -> Color =TColor(RGB(0,0,0)) ;
+	Form1->Canvas->Ellipse(krug1);
+}
+void DrawBackground(){
+	Form1->Canvas -> Brush -> Color =TColor(RGB(random(255),random(255),random(255))) ;
+	Form1->Canvas->FillRect(Rect(0,0,Form1->Width,Form1->Height));
+}
+
+
+
+
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+	pic = true;
+	graf = false;
+	background = false;
+    fig = false;
+	::InvalidateRect(Form1->Handle, 0,true);
+
+}
+//---------------------------------------------------------------------------
+ void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+	fig = true;
+	::InvalidateRect(Form1->Handle, &figure,false);
+}
+
+
+void __fastcall TForm1::Button3Click(TObject *Sender)
+{
+	background = true;
+
+   ::InvalidateRect(Form1->Handle, 0,false);
+}
+
+
+void __fastcall TForm1::Button4Click(TObject *Sender)
+{
+	graf = fig = pic = background =false;
+	krug_bool = true;
+
+	::InvalidateRect(Form1->Handle, 0, true);
+}
+
+
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::FormMouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+	if ( (X > 299 && X < 500) && ( Y > 9 && Y < 81) && Button == mbLeft)  {
+	Form1->Canvas->Brush->Color = clBtnShadow;
+		Form1->Canvas->FillRect(btn2);
+		Form1->Canvas->Pen->Width = 1;
+		Form1->Canvas->Pen->Color = clBlue;
+		Form1->Canvas->MoveTo(300,10);
+		Form1->Canvas->LineTo(500,10);
+		Form1->Canvas->MoveTo(500,10);
+		Form1->Canvas->LineTo(500,80);
+		Form1->Canvas->MoveTo(500,80);
+		Form1->Canvas->LineTo(300,80);
+		Form1->Canvas->MoveTo(300,80);
+		Form1->Canvas->LineTo(300,10);
+		Form1->Canvas->Font->Size = 10;
+		Form1->Canvas->TextOut(360,35, "Я кнопка");
+	}
+
+  }
+
+
+
+
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormMouseUp(TObject *Sender, TMouseButton Button, TShiftState Shift,
+          int X, int Y)
+{
+	if ( (X > 299 && X < 501) && ( Y > 9 && Y < 81) && Button == mbLeft)  {
+		Canvas -> Brush -> Color =clSilver;
+		Canvas->FillRect(btn2) ;
+		Canvas -> Font -> Color =clBlack;
+		Canvas -> Font -> Size =  10;
+		Canvas -> TextOut(360,35, "Я кнопка");
+
+		//Рисуем график функцию
+		graf =true;
+		krug_bool = false;
+		pic = fig = background = false;
+		Form1 -> Refresh();
+		Draw_Graf();
+	}
+	if (mousemove) {
+			krug_bool = true ;
+
+		::InvalidateRect(Form1->Handle, &krug1, true);
+        mousemove = false;
+	}
+
+}
+
+
+//---------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormResize(TObject *Sender)
+{
+	//	if (background) {
+	Form1 -> Refresh();
+//	}
+//	if (figure) {
+//	   ::InvalidateRect(Form1->Handle, &figurecolor,false);
+//	}
+
+
+
+}
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormClick(TObject *Sender)
+{
+
+	int r = (krug1.right - krug1.left) / 2;
+	int xrel = x - (krug1.right + krug1.left) / 2;
+	int yrel = y - (krug1.bottom + krug1.top) / 2;
+
+	if ( (xrel * xrel + yrel * yrel) < r * r) {
+		krug_bool=false;
+	::InvalidateRect(Form1->Handle, &krug1, true);
+
+}
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormMouseMove(TObject *Sender, TShiftState Shift, int X, int Y)
+{
+	x = X; y = Y;
+	if (Shift.Contains(ssLeft)) {
+		 mousemove=true;
+		//TRect newcircle = TRect(krug1.left ,krug1.right, x+50, x+50);
+		::InvalidateRect(Form1->Handle, &krug1, true);
+		krug1 = TRect(x-51, y-51, x+51, y+51);
+	}
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::FormActivate(TObject *Sender)
+{
+//	if (pic)  Sun();
+//	if (graf) Draw_Graf();
+//	if (fig) Draw_Fig();
+//	if (background) DrawBackground();
+//	if (krug_bool) Krug();
+//
+//
+//	Draw_
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::FormPaint(TObject *Sender)
+{
+    if (pic)  Sun();
+	if (graf) Draw_Graf();
+	if (fig) Draw_Fig();
+	if (background) DrawBackground();
+	if (krug_bool) Krug();
+
+
+	Draw_But();
+}
+//---------------------------------------------------------------------------
+

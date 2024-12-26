@@ -1,0 +1,20 @@
+C:\Users\cjabz\source\repos\LabaSp7(correct)\LabaSp7(correct)\bin\Debug\LabaSp7(correct).exe.config
+C:\Users\cjabz\source\repos\LabaSp7(correct)\LabaSp7(correct)\bin\Debug\LabaSp7(correct).exe
+C:\Users\cjabz\source\repos\LabaSp7(correct)\LabaSp7(correct)\bin\Debug\LabaSp7(correct).pdb
+C:\Users\cjabz\source\repos\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7(correct).csproj.AssemblyReference.cache
+C:\Users\cjabz\source\repos\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7_correct_.Form1.resources
+C:\Users\cjabz\source\repos\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7_correct_.Properties.Resources.resources
+C:\Users\cjabz\source\repos\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7(correct).csproj.GenerateResource.cache
+C:\Users\cjabz\source\repos\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7(correct).csproj.CoreCompileInputs.cache
+C:\Users\cjabz\source\repos\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7(correct).exe
+C:\Users\cjabz\source\repos\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7(correct).pdb
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\SP7\LabaSp7(correct)\LabaSp7(correct)\bin\Debug\LabaSp7(correct).exe.config
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\SP7\LabaSp7(correct)\LabaSp7(correct)\bin\Debug\LabaSp7(correct).exe
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\SP7\LabaSp7(correct)\LabaSp7(correct)\bin\Debug\LabaSp7(correct).pdb
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\SP7\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7(correct).csproj.AssemblyReference.cache
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\SP7\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7_correct_.Form1.resources
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\SP7\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7_correct_.Properties.Resources.resources
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\SP7\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7(correct).csproj.GenerateResource.cache
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\SP7\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7(correct).csproj.CoreCompileInputs.cache
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\SP7\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7(correct).exe
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\SP7\LabaSp7(correct)\LabaSp7(correct)\obj\Debug\LabaSp7(correct).pdb

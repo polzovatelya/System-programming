@@ -1,0 +1,20 @@
+C:\Users\cjabz\source\repos\Laba7SP\Laba7SP\bin\Debug\Laba7SP.exe.config
+C:\Users\cjabz\source\repos\Laba7SP\Laba7SP\bin\Debug\Laba7SP.exe
+C:\Users\cjabz\source\repos\Laba7SP\Laba7SP\bin\Debug\Laba7SP.pdb
+C:\Users\cjabz\source\repos\Laba7SP\Laba7SP\obj\Debug\Laba7SP.csproj.AssemblyReference.cache
+C:\Users\cjabz\source\repos\Laba7SP\Laba7SP\obj\Debug\Laba7SP.Form1.resources
+C:\Users\cjabz\source\repos\Laba7SP\Laba7SP\obj\Debug\Laba7SP.Properties.Resources.resources
+C:\Users\cjabz\source\repos\Laba7SP\Laba7SP\obj\Debug\Laba7SP.csproj.GenerateResource.cache
+C:\Users\cjabz\source\repos\Laba7SP\Laba7SP\obj\Debug\Laba7SP.csproj.CoreCompileInputs.cache
+C:\Users\cjabz\source\repos\Laba7SP\Laba7SP\obj\Debug\Laba7SP.exe
+C:\Users\cjabz\source\repos\Laba7SP\Laba7SP\obj\Debug\Laba7SP.pdb
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\6\6_Sofa\Laba7SP\Laba7SP\bin\Debug\Laba7SP.exe.config
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\6\6_Sofa\Laba7SP\Laba7SP\bin\Debug\Laba7SP.exe
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\6\6_Sofa\Laba7SP\Laba7SP\bin\Debug\Laba7SP.pdb
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\6\6_Sofa\Laba7SP\Laba7SP\obj\Debug\Laba7SP.csproj.AssemblyReference.cache
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\6\6_Sofa\Laba7SP\Laba7SP\obj\Debug\Laba7SP.Form1.resources
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\6\6_Sofa\Laba7SP\Laba7SP\obj\Debug\Laba7SP.Properties.Resources.resources
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\6\6_Sofa\Laba7SP\Laba7SP\obj\Debug\Laba7SP.csproj.GenerateResource.cache
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\6\6_Sofa\Laba7SP\Laba7SP\obj\Debug\Laba7SP.csproj.CoreCompileInputs.cache
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\6\6_Sofa\Laba7SP\Laba7SP\obj\Debug\Laba7SP.exe
+C:\Users\gagag\Desktop\3 курс\Системное программирование 2024\Лабы\6\6_Sofa\Laba7SP\Laba7SP\obj\Debug\Laba7SP.pdb
